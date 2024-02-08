@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MunchApp Plus</title>
+
+    <link rel="stylesheet" href="assets/styles/designer.css">
+    <link rel="stylesheet" href="assets/styles/lib/tailwind.css">
+</head>
+<body>
+    <div class="h-screen">
+        <!-- Top  Element -->
+        <div class="flex justify-center">
+            <div class="sticky pt-16">
+                <h2 class="_font text-center text-3xl pt-3">Login</h2>
+                <p class="_font text-center text-lg pt-1">Add your details to Login</p>
+            </div>
+        </div>
+
+        <!-- Center Element -->
+        <div class="flex flex-col pt-5">
+            <div class="pl-7 pr-7 pb-2.5">
+                <input class="_font std-input rounded-full h-14 w-full pl-4 text-lg" type="email" placeholder="Email" required>
+            </div>
+
+            <div>
+                <p class="_font error-text text-sm font-medium text-center hidden">Email is a required field</p>
+            </div>
+
+            <div class="pl-7 pr-7 pt-2.5">
+                <input class="_font std-input rounded-full h-14 w-full pl-4 text-lg" type="password" placeholder="Password" required>
+            </div>
+
+            <div class="pl-7 pr-7 pt-4">
+                <button class="_font btn-0 main-btn rounded-full h-14 w-full">Login</button>
+            </div>
+
+            <div>
+                <p class="_font text-center pt-6 hidden"><a href="#">Forgot your password?</a></p>
+            </div>
+        </div>
+
+        <!-- Bottom Element -->
+        <div class="fixed bottom-16 w-full">
+            <p class="_font text-center text-base">Don't have an Account? <a href="#" class="_font btn-0 hyper-text font-bold">Sign Up</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

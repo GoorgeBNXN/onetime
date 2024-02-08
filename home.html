@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="ispinner.css">
+        <link rel="stylesheet" href="tailwind.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+        <script>
+             function runBalancer(){
+                // Generate a random balance.
+            let min = 20.0;
+            let max = 3000.0;
+            let nairaBal = Math.ceil(Math.random() * (max - min) + min) + '0';
+
+            document.getElementById('usrBal').innerHTML = nairaBal;
+             }
+      
+             runBalancer();
+          </script>
+    </head>
+<body>
+    <header class="bg-white p-4 sticky flex justify-start items-center">
+        <img class="rounded-full" style="width: 3rem" src="user.png" alt="usr">
+        <h1 id="displayNameOBJ" class="text-2xl pl-3">Jacob Fagbemi</h1>
+      </header>
+
+      <main class="pl-4 pr-4 pb-4">
+        <div class="bal-card p-4 rounded-md h-32">
+          <div class="flex justify-center items-center pt-3">
+            <h5 class="text-white">Feeding Balance</h5>
+          </div>
+            <h3 id="usrBal" class="cash text-white text-3xl font-bold text-center pt-2">&#8358;6,080.00</h3>
+        </div>
+      
+        <section class="pt-4 pb-4">
+          <div class="">
+            <h5>Available Restaurants</h5>
+          </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Your Choice Kitchen</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Tasty Vine Kitchen</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Cresta</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Marigold Kitchen</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Tasty Delight</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Burger & Bread</p>
+          </div>
+
+          <!-- CAFE -->
+          <div class="bg-gray-100 p-4 rounded-md">
+            <div class="flex justify-center items-center pt-3 pb-2">
+              <img class="rounded-full" style="width: 2.5rem;" src="cafe.svg" alt="cafe">
+            </div>
+            <p class="text-sm text-center pb-5">Main Royal Cafeteria</p>
+          </div>
+        </section>
+      </main>
+
+      <script src="butler.js"></script>
+    <script src="receipt.js"></script>
+    <script src="./menu/react.js"></script>
+</body>
+</html>
